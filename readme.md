@@ -11,13 +11,13 @@
 
 This repository contains all the code and documentation required to detect **glaucoma** from eye fundus images using a deep CNN architecture.
 
-- ✅ **Base Model**: EfficientNet (pretrained on ImageNet)
-- 🖼️ **Input**: Retinal fundus images from a Kaggle dataset
-- 🧪 **Techniques**:
-  - Guided image enhancement
-  - Real-time data augmentation
-  - Learning rate scheduling
-  - Early stopping
+- ✅ **Base Model**: EfficientNet (pretrained on ImageNet)  
+- 🖼️ **Input**: Retinal fundus images from a Kaggle dataset  
+- 🧪 **Techniques**:  
+  - Guided image enhancement  
+  - Real-time data augmentation  
+  - Learning rate scheduling  
+  - Early stopping  
 - 📊 **Evaluation**: Accuracy, ROC Curve, Confusion Matrix, and F1-Score
 
 ---
@@ -34,8 +34,8 @@ This repository contains all the code and documentation required to detect **gla
 
 ## 📥 Quick Access
 
-- 🔗 [View Notebook](./GlaucomaEfficentNet.ipynb)
-- 📦 [Trained Model (H5)](./saved_model.h5)
+- 🔗 [View Notebook](./GlaucomaEfficentNet.ipynb)  
+- 📦 [Trained Model (H5)](./saved_model.h5)  
 - 📂 [Dataset Folder Structure](#dataset)
 
 ---
