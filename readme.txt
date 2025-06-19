@@ -1,47 +1,41 @@
-# Glaucoma EfficientNet Detection 🚨
+# 👁️ Glaucoma Detection using EfficientNet
 
-**Automatic glaucoma detection** using transfer learning with EfficientNet on a Kaggle eye-fundus dataset.
-
-
----
-
-## Overview
-
-This repository contains Jupyter notebooks and scripts for detecting glaucoma from retinal fundus images. The core model is based on **EfficientNet** (a state-of-the-art CNN with compound scaling) :contentReference[oaicite:1]{index=1}. The pipeline includes data augmentation, training, and evaluation.
+> **A deep learning project for automated *glaucoma detection*** from retinal fundus images  
+> using **EfficientNet** and Keras.  
+> 🧪 This model uses guided filtering, advanced data augmentation, and transfer learning  
+> to perform accurate binary classification: `Glaucoma` vs `Non-Glaucoma`.
 
 ---
 
-## Dataset
+## 📌 Overview
 
-- ⚙️ **Source**: Kaggle (“Glaucoma Detection”)  
-- **Contents**: Labeled fundus images (glaucoma vs normal)  
-- You must download and place the dataset under `data/raw/`.
+This repository contains all the code and documentation required to detect **glaucoma** from eye fundus images using a deep CNN architecture.
 
----
-
-## Approach
-
-### Preprocessing & Augmentation
-
-From the `.ipynb`, the following techniques are applied:
-
-- Horizontal and vertical flipping  
-- Brightness/contrast adjustments  
-- CLAHE (Contrast Limited Adaptive Histogram Equalization)  
-- Channel multipliers, random crops, and scaling  
-
-These augmentations aim to improve model generalization.
-
-### Model Architecture
-
-- **Base model**: EfficientNet (B0–B7 as chosen via training) :contentReference[oaicite:2]{index=2}  
-- Transfer learning: Pretrained weights + custom output layer for binary classification  
+- ✅ **Base Model**: EfficientNet (pretrained on ImageNet)
+- 🖼️ **Input**: Retinal fundus images from a Kaggle dataset
+- 🧪 **Techniques**:
+  - Guided image enhancement
+  - Real-time data augmentation
+  - Learning rate scheduling
+  - Early stopping
+- 📊 **Evaluation**: Accuracy, ROC Curve, Confusion Matrix, and F1-Score
 
 ---
 
-## Usage 🚀
+## 📁 Sample Preview (optional)
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/rohit10koshy/GlaucomaEfficentNet.git
-   cd GlaucomaEfficentNet
+> You can include before/after image preprocessing here:
+
+| Original Image | After Preprocessing |
+|----------------|---------------------|
+| ![](images/original.jpg) | ![](images/filtered.jpg) |
+
+---
+
+## 📥 Quick Access
+
+- 🔗 [View Notebook](./GlaucomaEfficentNet.ipynb)
+- 📦 [Trained Model (H5)](./saved_model.h5)
+- 📂 [Dataset Folder Structure](#dataset)
+
+---
