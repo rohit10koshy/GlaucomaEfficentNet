@@ -27,8 +27,6 @@ This repository contains all the code and documentation required to detect **gla
 ---
 
 ## 📥 Quick Access
-
-- 🔗 [View Notebook](./GlaucomaEfficentNet.ipynb)  
 - 📦 [Trained Model (H5)](./saved_model.h5)  
 - 📂 [Dataset Folder Structure](#dataset)
 
